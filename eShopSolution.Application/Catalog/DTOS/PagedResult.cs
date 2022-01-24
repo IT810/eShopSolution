@@ -4,9 +4,9 @@ using System.Text;
 
 namespace eShopSolution.Application.Catalog.DTOS
 {
-    public class ProductCreateRequest
+    public class PagedResult<T>
     {
-        public string Name { get; set; }
-        public decimal Price { get; set; }
+        public List<T> Items { get; set; }
+        public int TotalRecord { get; set; }
     }
 }
