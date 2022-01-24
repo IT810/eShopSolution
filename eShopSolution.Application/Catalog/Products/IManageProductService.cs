@@ -26,9 +26,6 @@ namespace eShopSolution.Application.Catalog.Products
         // Update product stock of a product
         Task<bool> UpdateStock(int productId, int addedQuantity);
 
-        // Get list of all products
-        Task<List<ProductViewModel>> GetAll();
-
         Task AddViewCount(int productId);
 
         Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
